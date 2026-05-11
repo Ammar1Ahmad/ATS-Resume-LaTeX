@@ -1,0 +1,136 @@
+\documentclass[a4paper,10.5pt]{article}
+
+%================ PACKAGES =================%
+\usepackage{url}
+\usepackage{parskip}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.86]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+\pagestyle{empty}
+
+%================ CUSTOM =================%
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\newenvironment{joblong}[2]
+{
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{#1} & \hfill & \textit{#2} \\[-2pt]
+\end{tabularx}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+}
+{
+\end{itemize}
+}
+
+%================ DOCUMENT =================%
+\begin{document}
+
+%================ HEADER =================%
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{\textbf{Ammar Ahmad}} \\[4pt]
+
+\faMapMarker* \ Lucknow,  India \ $|$ \ 
+\faMobile\ +91-9708059326 \ $|$ \ 
+\href{mailto:ammarahmad7651@gmail.com}{\faEnvelope\ ammarahmad7651@gmail.com} \ $|$ \ 
+\href{https://www.linkedin.com/in/ammar1ahmad/}{\faLinkedin\ LinkedIn}
+\end{tabularx}
+
+%================ SUMMARY =================%
+\section{Summary}
+Computer Science Engineering student specializing in Cloud and DevOps with hands-on experience in AWS, CI/CD pipelines, Docker, and Linux. Solved 500+ DSA problems with a Top global rank in LeetCode contests, demonstrating strong problem-solving and algorithmic skills. Passionate about building scalable systems, automating workflows, and developing production-ready applications.
+
+%================ EDUCATION =================%
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Integral University, Lucknow} & 2022 -- 2026 \\
+B.Tech in Computer Science Engineering & CGPA: \textbf{8.0/10} \\
+\end{tabularx}
+
+\vspace{2pt}
+
+\textbf{Relevant Coursework:} DevOps, Cloud, Data Structures \& Algorithms, Operating Systems, Computer Networks,  System Design
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{M S College, Siwan} & 2022 \\
+Intermediate (PCM) & \\
+\end{tabularx}
+
+%================ EXPERIENCE =================%
+%================ EXPERIENCE =================%
+\section{Experience}
+
+\begin{joblong}{Data Science \& AI/ML Intern -- YBI Foundation}{Jul 2024}
+
+\item Processed and analyzed \textbf{10K+ records} using Python (Pandas, NumPy) to extract actionable insights and improve data quality. Developed machine learning models for classification and prediction tasks, and automated data processing workflows reducing manual effort by \textbf{30\%}. Optimized scripts and debugging processes to enhance performance, reliability, and overall efficiency of data pipelines.
+
+\end{joblong}
+
+%================ PROJECTS =================%
+\section{Projects}
+
+\begin{joblong}{Cloud-Based Smart Healthcare Monitoring System \hfill \href{https://github.com/Ammar1Ahmad/medcloudai}{\faGithub}}{Aug 2025}
+
+\item Architected and deployed a scalable healthcare monitoring system on AWS (EC2, S3) enabling real-time patient data tracking. Designed secure authentication and role-based access control (RBAC), and implemented efficient data pipelines for continuous ingestion and processing, improving system reliability, scalability, and performance under dynamic workloads.
+
+\end{joblong}
+
+\begin{joblong}{CI/CD Pipeline with Docker Deployment \hfill }{Mar 2026}
+
+\item Built an end-to-end CI/CD pipeline using GitHub Actions to automate build, test, and deployment workflows. Containerized applications using Docker and deployed on cloud infrastructure, reducing manual deployment effort and ensuring faster, consistent, and reliable releases.
+
+\end{joblong}
+
+\begin{joblong}{Portfolio Website \hfill \href{https://ammarahmad.lovable.app}{\faGlobe}}{Aug 2024}
+
+\item Developed a responsive portfolio website using HTML, CSS, Tailwind, and JavaScript with optimized UI/UX. Improved load performance by \textbf{25\%} through efficient asset management and implemented version-controlled deployment workflows for seamless updates and maintainability.
+
+\end{joblong}
+%================ SKILLS =================%
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+\textbf{Programming} & Python, Java, C, SQL \\
+
+\textbf{Cloud \& DevOps} & AWS (EC2, S3, IAM), Docker, Kubernetes, CI/CD, Git, GitHub \\
+
+\textbf{Frameworks \& Tools} & Pandas, NumPy, Matplotlib, Tailwind CSS, REST APIs \\
+
+\textbf{Operating Systems} & Linux (Shell Scripting, Process Management) \\
+
+\textbf{Core Concepts} & Data Structures \& Algorithms, OOP, SDLC, System Design Basics, Debugging, Automation \\
+
+\end{tabularx}
+
+%================ ACHIEVEMENTS =================%
+\section{Achievements}
+
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+
+\item Demonstrated strong problem-solving and algorithmic skills by solving \textbf{500+ Data Structures \& Algorithms problems} on LeetCode, achieving a \textbf{Top 100 global rank} in weekly contests. Earned \textbf{15+ badges} including the \textbf{Architecture Builder Badge}, and successfully completed the LeetCode 75 Study Plan.
+
+\item Validated multi-language programming proficiency by earning \textbf{Gold Badges on HackerRank} in Java, Python, and SQL through consistent performance in competitive coding assessments.
+
+\end{itemize}
+
+%================ PROFILE LINKS =================%
+\section{Profile Links}
+\begin{center}
+\href{https://github.com/Ammar1Ahmad}{\faGithub\ GitHub} \quad | \quad
+\href{https://leetcode.com/u/Ammar1ahmad/}{\faCode\ LeetCode} \quad | \quad
+\href{https://www.hackerrank.com/profile/ammarahma}{\faLaptopCode\ HackerRank}
+\end{center}
+
+\end{document}
